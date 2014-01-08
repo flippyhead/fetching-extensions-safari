@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/meteor-ddp/index.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="popover.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+
+      <div id="main" class="hidden">
+
+        <h1 id="on-air">
+          <i class="glyphicon glyphicon-record"></i>
+          <span>ON AIR</span><br/>
+
+          <button class="btn" id="pause">
+            <i class="glyphicon glyphicon-pause"></i>
+            Pause
+          </button>
+        </h1>
+
+        <h1 id="off-air">
+          <i class="glyphicon glyphicon-record text-muted"></i>
+          <span class="text-muted">OFF AIR</span><br/>
+
+          <button class="btn" id="resume">
+            <i class="glyphicon glyphicon-play"></i>
+            Resume
+          </button>
+        </h1>
+      </div>
+
+      <form role="form" id="login">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email"
+            class="form-control" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password"
+            class="form-control" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <nav class="navbar navbar-fixed-bottom" role="navigation">
+        <ul class="nav">
+          <li>
+            <a href="#" id="logout">
+              <span class="glyphicon glyphicon-off"></span> Logout
+            </a>
+          </li>
+          <li>
+            <a href="#" id="logout">
+              <span class="glyphicon glyphicon-off"></span> Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </body>
+
+</html>
