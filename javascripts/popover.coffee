@@ -43,10 +43,6 @@ require ['backbone', 'meteor_ddp'], (Backbone, MeteorDdp) ->
         @showPaused() if e.key is 'indexingPaused'
       , false
 
-      # DEBUG WITH:
-      # @settings.accessToken = 'asasdfasf'
-      # @settings.indexingPaused = false
-
     render: ->
       super
       @showLogin()
