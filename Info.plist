@@ -7,22 +7,22 @@
 	<key>CFBundleDisplayName</key>
 	<string>fetching</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.fetching</string>
+	<string>io.ptb.fetching</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
 	<string>2</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
-		<string>main.html</string>
+		<string>html/main.html</string>
 		<key>Popovers</key>
 		<array>
 			<dict>
 				<key>Filename</key>
-				<string>popover.html</string>
+				<string>html/popover.html</string>
 				<key>Height</key>
 				<real>250</real>
 				<key>Identifier</key>
@@ -53,7 +53,7 @@
 		<dict>
 			<key>End</key>
 			<array>
-				<string>main.js</string>
+				<string>javascripts/main.js</string>
 			</array>
 		</dict>
 	</dict>
