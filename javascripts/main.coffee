@@ -1,9 +1,9 @@
 window.addEventListener "load", (e) ->
-  console.debug "Page loaded."
+  console.debug "INJECTED: Page loaded."
 
   if window.top is window
     location = document.location.toString()
-    console.debug "Processed #{location}"
+    console.debug "INJECTED: Processed #{location}"
 
     return if location.indexOf('fetching.io') > 0
 

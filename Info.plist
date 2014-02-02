@@ -2,12 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Author</key>
+	<string>Peter T. Brown</string>
 	<key>Builder Version</key>
 	<string>9537.73.11</string>
 	<key>CFBundleDisplayName</key>
-	<string>fetching</string>
+	<string>Fetching.io</string>
 	<key>CFBundleIdentifier</key>
-	<string>io.ptb.fetching</string>
+	<string>io.fetching</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -17,7 +19,7 @@
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
-		<string>html/main.html</string>
+		<string>html/global.html</string>
 		<key>Popovers</key>
 		<array>
 			<dict>
@@ -35,11 +37,11 @@
 		<array>
 			<dict>
 				<key>Command</key>
-				<string></string>
+				<string>bookmark</string>
 				<key>Identifier</key>
 				<string>fetching</string>
 				<key>Image</key>
-				<string>magnifier_24.png</string>
+				<string>star-empty.png</string>
 				<key>Label</key>
 				<string>Fetching</string>
 				<key>Popover</key>
@@ -57,6 +59,8 @@
 			</array>
 		</dict>
 	</dict>
+	<key>Description</key>
+	<string>Never lose track of a website you've visited again.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -69,5 +73,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>http://fetching.io</string>
 </dict>
 </plist>

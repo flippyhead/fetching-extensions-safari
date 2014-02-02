@@ -19,13 +19,13 @@ require ['backbone', 'meteor_ddp'], (Backbone, MeteorDdp) ->
         @settings.accessToken = null
 
       'submit #login': (e) ->
-        console.debug 'POPOVER: Logging in...'
+        console.debug 'POPOVER: Logging in'
 
         e.preventDefault()
         email = $('[name=email]').val()
         password = $('[name=password]').val()
 
-        ddp = new MeteorDdp 'ws://fetching.io/websocket'
+        ddp = new MeteorDdp "ws://#{@settings.host}/websocket"
         ddp.connect().done =>
           console.debug 'POPOVER: Connected.'
 
@@ -34,7 +34,7 @@ require ['backbone', 'meteor_ddp'], (Backbone, MeteorDdp) ->
             @settings.accessToken = resp.token
 
     initialize: ->
-      console.debug 'POPOVER: INIT'
+      console.debug 'POPOVER: starting'
       @settings = safari?.extension.secureSettings or {}
       @settings.indexingPaused ?= off
 

@@ -30,11 +30,11 @@ require(['backbone', 'meteor_ddp'], function(Backbone, MeteorDdp) {
       'submit #login': function(e) {
         var ddp, email, password,
           _this = this;
-        console.debug('POPOVER: Logging in...');
+        console.debug('POPOVER: Logging in');
         e.preventDefault();
         email = $('[name=email]').val();
         password = $('[name=password]').val();
-        ddp = new MeteorDdp('ws://fetching.io/websocket');
+        ddp = new MeteorDdp("ws://" + this.settings.host + "/websocket");
         return ddp.connect().done(function() {
           console.debug('POPOVER: Connected.');
           return ddp.call('login', [
@@ -55,7 +55,7 @@ require(['backbone', 'meteor_ddp'], function(Backbone, MeteorDdp) {
     MainView.prototype.initialize = function() {
       var _base,
         _this = this;
-      console.debug('POPOVER: INIT');
+      console.debug('POPOVER: starting');
       this.settings = (typeof safari !== "undefined" && safari !== null ? safari.extension.secureSettings : void 0) || {};
       if ((_base = this.settings).indexingPaused == null) {
         _base.indexingPaused = false;

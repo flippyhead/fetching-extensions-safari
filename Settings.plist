@@ -12,5 +12,17 @@
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://fetching.io</string>
+		<key>Key</key>
+		<string>host</string>
+		<key>Secure</key>
+		<true/>
+		<key>Title</key>
+		<string>Host</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
 </array>
 </plist>
