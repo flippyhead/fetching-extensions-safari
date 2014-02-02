@@ -15,6 +15,18 @@ require(['backbone'], function(Backbone) {
       return _ref;
     }
 
+    GlobalView.prototype.initialize = function() {
+      console.debug("GLOBAL: Initializing.");
+      this.settings = safari.extension.secureSettings;
+      if (!this.settings.host) {
+        this.settings.host = "fetching.io";
+      }
+      this.extension = safari.extension;
+      this.starButton = this.extension.toolbarItems[0];
+      safari.application.addEventListener("message", this.performLoaded, true);
+      return safari.application.addEventListener("command", this.toggleBookmark, false);
+    };
+
     GlobalView.prototype.performLoaded = function(e) {
       var _this = this;
       if (e.name !== "page-loaded") {
@@ -23,7 +35,7 @@ require(['backbone'], function(Backbone) {
       if (!this.settings.accessToken || this.settings.indexingPaused === true) {
         return;
       }
-      console.log("GLOBAL: Posting page contents.");
+      console.debug("GLOBAL: Posting page contents.");
       return $.ajax({
         method: 'POST',
         url: "http://" + this.settings.host + "/documents",
@@ -65,20 +77,7 @@ require(['backbone'], function(Backbone) {
     };
 
     GlobalView.prototype.setBookmarked = function() {
-      console.log(this.document);
       return this.starButton.image = this.document.bookmarked ? this.extension.baseURI + 'star-full.png' : this.extension.baseURI + 'star-empty.png';
-    };
-
-    GlobalView.prototype.initialize = function() {
-      console.log("GLOBAL: Initializing.");
-      this.settings = safari.extension.secureSettings;
-      if (!this.settings.host) {
-        this.settings.host = "localhost:3000";
-      }
-      this.extension = safari.extension;
-      this.starButton = this.extension.toolbarItems[0];
-      safari.application.addEventListener("message", this.performLoaded, true);
-      return safari.application.addEventListener("command", this.toggleBookmark, false);
     };
 
     return GlobalView;
