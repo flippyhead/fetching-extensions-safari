@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"set",
+				"setBookmarked"
+			],
+			[
+				"me",
+				"meteor_ddp"
+			],
+			[
 				"Doc",
 				"DocumentsDialog"
 			],
@@ -87,14 +95,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "javascripts/popover.coffee",
-			"settings":
-			{
-				"buffer_size": 1765,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -154,10 +154,34 @@
 	"file_history":
 	[
 		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/popover.coffee",
-		"/Users/peter/Development/fetching-extensions/fetching.safariextension/Info.plist",
-		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/main.coffee",
-		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/build.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/global.coffee",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/global.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/fetching.sublime-project",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/ddp.js",
 		"/Users/peter/Development/fetching-extensions/fetching.safariextension/html/popover.html",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/html/global.html",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/html/global.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/optimized/popover.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/build/fetching.safariextz",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/Settings.plist",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/html/popover.js",
+		"/Users/peter/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/build-global.coffee",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/build-popover.coffee",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/build-global.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/build-popover.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/views/popover.html",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/views/config.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/views/global.html",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/views/global.coffee",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/optimized/global.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/main.coffee",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/html/main.html",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/require.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/optimized/all.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/javascripts/build.js",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/README.md",
+		"/Users/peter/Development/fetching-extensions/fetching.safariextension/Info.plist",
 		"/Users/peter/Development/fetching.safariextension/popover.html",
 		"/Users/peter/Development/fetching.safariextension/fetching.sublime-project",
 		"/Users/peter/Development/fetching.safariextension/popover.js",
@@ -184,7 +208,6 @@
 		"/Users/peter/Development/fetching-app/collections/documents.coffee",
 		"/Users/peter/Development/fetching-app/server/publications.coffee",
 		"/Users/peter/Development/fetching-app/server/startup.coffee",
-		"/Users/peter/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/peter/Development/pathable/public/javascripts/views/users/search-controls.jst",
 		"/Users/peter/Development/pathable/public/javascripts/views/users/search-controls.coffee",
 		"/Users/peter/Development/pathable/public/javascripts/views/mobile/users/index.jst",
@@ -257,30 +280,7 @@
 		"/Users/peter/Development/pathable/public/javascripts/views/mobile/meetings/filters/filter.jst",
 		"/Users/peter/Development/pathable/app/models/groups/meetings/meeting.rb",
 		"/Users/peter/Development/pathable/app/models/search/collection.rb",
-		"/Users/peter/Development/pathable/db/migrate/20130902121857_create_indexes_on_location_id.rb",
-		"/Users/peter/Development/pathable/public/a/custom_overrides.css",
-		"/Users/peter/Development/pathable/public/changelog.md",
-		"/Users/peter/Development/pathable/db/structure.sql",
-		"/Users/peter/Development/pathable/app/models/groups/meetings/label.rb",
-		"/Users/peter/Development/pathable/app/models/groups/affiliations/label.rb",
-		"/Users/peter/Development/pathable/app/models/groups/label.rb",
-		"/Users/peter/Development/pathable/public/javascripts/models/user.coffee",
-		"/Users/peter/Development/pathable/spec/models/user_spec.rb",
-		"/Users/peter/Development/pathable/spec/support/shared_examples/model_date_time_in_utc.rb",
-		"/Users/peter/Development/pathable/public/javascripts/models/model.coffee",
-		"/Users/peter/Development/pathable/app/controllers/concerns/mobile_device_concern.rb",
-		"/Users/peter/Development/pathable/public/javascripts/routers/router.coffee",
-		"/Users/peter/Development/pathable/public/javascripts/ui/groups/join.coffee",
-		"/Users/peter/Development/pathable/public/javascripts/views/mobile/flash.coffee",
-		"/Users/peter/Development/pathable/public/javascripts/views/mobile/application.coffee",
-		"/Users/peter/Development/pathable/app/models/group.rb",
-		"/Users/peter/Development/pathable/Gemfile",
-		"/Users/peter/Development/pathable/app/views/assets/mobile.manifest.erb",
-		"/Users/peter/Development/pathable/app/models/discussions/deliverable.rb",
-		"/Users/peter/Development/pathable/spec/routing/api/memberships_routing_spec.rb",
-		"/Users/peter/Development/pathable/lib/tasks/elasticsearch.rake",
-		"/Users/peter/Development/pathable/spec/models/groups/meetings/attendance_spec.rb",
-		"/Users/peter/Development/pathable/app/assets/jsts/host/users/multi_edit.jst"
+		"/Users/peter/Development/pathable/db/migrate/20130902121857_create_indexes_on_location_id.rb"
 	],
 	"find":
 	{
@@ -291,6 +291,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"*",
 			"*.coffee",
 			"*.rb",
 			"*.scss",
@@ -417,8 +418,7 @@
 			"*.rb",
 			"*.coffee",
 			"*.rb",
-			"*.coffee",
-			"*.rb"
+			"*.coffee"
 		]
 	},
 	"find_state":
@@ -426,6 +426,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sock",
+			"started",
+			"bookmark",
+			"fetching.io",
+			"fetching",
+			"fetching.io",
+			"fetching",
+			"log",
+			"define",
 			"#container",
 			"main",
 			"Meteor.settings",
@@ -544,16 +553,7 @@
 			"stats",
 			"analytics",
 			"analy",
-			"show_on_home_page",
-			"answers",
-			"wild",
-			"for_user",
-			"label",
-			"InterestLabels",
-			"display_organizations_as_table",
-			"is_en		",
-			"path",
-			"authentication_url"
+			"show_on_home_page"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -582,39 +582,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "javascripts/popover.coffee",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1765,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

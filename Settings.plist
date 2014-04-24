@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<string>http://fetching.io</string>
+		<string>http://localhost:3000</string>
 		<key>Key</key>
 		<string>host</string>
 		<key>Secure</key>

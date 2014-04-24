@@ -6,7 +6,7 @@
 			"path": ".",
       "file_exclude_patterns":
       [
-        "**/*.js",
+        "**/*.jsx",
         ".rspec",
         "*.map"
       ]
