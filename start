@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+# Start Watching
+../node_modules/.bin/watchify javascripts/global.js -o html/global.js
+../node_modules/.bin/watchify javascripts/popover.js -o html/popover.js
+
+wait
+
+# Kill jobs on termination.
+trap 'kill $(jobs -p)' SIGINT SIGTERM
